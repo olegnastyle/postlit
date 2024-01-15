@@ -12,27 +12,122 @@
         }
       }
     </style>
+
+    <style>
+        .grid-parent {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 0px;
+        }
+    </style>
 </head>
 <body class="flex flex-col h-full bg-slate-900">
     <header class="container mx-auto py-4 flex justify-between text-slate-50">
-        <a href="#" class="text-teal-400 text-2xl">P.O.S.T.L.I.T.</a>
-        <div class="relative">
-            <input type="search" placeholder="Искать на Постлит" class="p-1 bg-slate-300 text-slate-950 rounded-bl-lg rounded-tr-lg">
-            <button class="absolute right-1 bottom-1">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" color="#000" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <a href="#" class="text-teal-300 text-2xl italic">P.O.S.T.L.I.T.</a>
+        <div class="flex gap-1">
+            <button class="py-1 px-4 bg-gradient-to-r from-teal-400 to-teal-600 hover:from-teal-600 hover:to-teal-400 active:brightness-75 -skew-x-6 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                 </svg>                  
             </button>
         </div>
     </header>
-    <main class="container mx-auto flex-auto">
-        <div>
-            
+    <main class="container mx-auto flex-auto text-slate-50 grid-parent">
+        <div style="grid-area: 1 / 1 / 2 / 5;" class="flex flex-col gap-4 bg-teal-600 py-4 px-8 rounded-xl -skew-x-1">
+            <h2>Новинки</h2>
+            <div class="flex flex-wrap justify-between gap-10">
+                <div class="flex bg-teal-400 p-4 rounded-md -skew-x-6 relative">
+                    <img src="https://tumanitochka.github.io/postlit/css/img/cover/01.jpeg" class="object-cover rounded-md -skew-x-6 h-20 w-20 relative right-9">
+                    <div>
+                        <p>Автор: Алексей Калугин</p>
+                        <p>Название: Мечта на поражение</p>
+                        <p>Исполнитель: Олег Лобанов</p>
+                        <button class="bg-teal-600 p-1 rounded-md -skew-x-1 w-full">Слушать</button>
+                    </div>
+                </div>
+                <div class="flex bg-teal-400 p-4 rounded-md -skew-x-6">
+                    <img src="https://tumanitochka.github.io/postlit/css/img/cover/01.jpeg" class="object-cover rounded-md -skew-x-6 h-20 w-20 relative right-9">
+                    <div>
+                        <p>Автор: Алексей Калугин</p>
+                        <p>Название: Мечта на поражение</p>
+                        <p>Исполнитель: Олег Лобанов</p>
+                        <button class="bg-teal-600 p-1 rounded-md -skew-x-1 w-full">Слушать</button>
+                    </div>
+                </div>
+                <div class="flex bg-teal-400 p-4 rounded-md -skew-x-6">
+                    <img src="https://tumanitochka.github.io/postlit/css/img/cover/01.jpeg" class="object-cover rounded-md -skew-x-6 h-20 w-20 relative right-9">
+                    <div>
+                        <p>Автор: Алексей Калугин</p>
+                        <p>Название: Мечта на поражение</p>
+                        <p>Исполнитель: Олег Лобанов</p>
+                        <button class="bg-teal-600 p-1 rounded-md -skew-x-1 w-full">Слушать</button>
+                    </div>
+                </div>
+                <div class="flex bg-teal-400 p-4 rounded-md -skew-x-6">
+                    <img src="https://tumanitochka.github.io/postlit/css/img/cover/01.jpeg" class="object-cover rounded-md -skew-x-6 h-20 w-20 relative right-9">
+                    <div>
+                        <p>Автор: Алексей Калугин</p>
+                        <p>Название: Мечта на поражение</p>
+                        <p>Исполнитель: Олег Лобанов</p>
+                        <button class="bg-teal-600 p-1 rounded-md -skew-x-1 w-full">Слушать</button>
+                    </div>
+                </div>
+                <div class="flex bg-teal-400 p-4 rounded-md -skew-x-6">
+                    <img src="https://tumanitochka.github.io/postlit/css/img/cover/01.jpeg" class="object-cover rounded-md -skew-x-6 h-20 w-20 relative right-9">
+                    <div>
+                        <p>Автор: Алексей Калугин</p>
+                        <p>Название: Мечта на поражение</p>
+                        <p>Исполнитель: Олег Лобанов</p>
+                        <button class="bg-teal-600 p-1 rounded-md -skew-x-1 w-full">Слушать</button>
+                    </div>
+                </div>
+                <div class="flex bg-teal-400 p-4 rounded-md -skew-x-6">
+                    <img src="https://tumanitochka.github.io/postlit/css/img/cover/01.jpeg" class="object-cover rounded-md -skew-x-6 h-20 w-20 relative right-9">
+                    <div>
+                        <p>Автор: Алексей Калугин</p>
+                        <p>Название: Мечта на поражение</p>
+                        <p>Исполнитель: Олег Лобанов</p>
+                        <button class="bg-teal-600 p-1 rounded-md -skew-x-1 w-full">Слушать</button>
+                    </div>
+                </div>
+                <div class="flex bg-teal-400 p-4 rounded-md -skew-x-6">
+                    <img src="https://tumanitochka.github.io/postlit/css/img/cover/01.jpeg" class="object-cover rounded-md -skew-x-6 h-20 w-20 relative right-9">
+                    <div>
+                        <p>Автор: Алексей Калугин</p>
+                        <p>Название: Мечта на поражение</p>
+                        <p>Исполнитель: Олег Лобанов</p>
+                        <button class="bg-teal-600 p-1 rounded-md -skew-x-1 w-full">Слушать</button>
+                    </div>
+                </div>
+                <div class="flex bg-teal-400 p-4 rounded-md -skew-x-6">
+                    <img src="https://tumanitochka.github.io/postlit/css/img/cover/01.jpeg" class="object-cover rounded-md -skew-x-6 h-20 w-20 relative right-9">
+                    <div>
+                        <p>Автор: Алексей Калугин</p>
+                        <p>Название: Мечта на поражение</p>
+                        <p>Исполнитель: Олег Лобанов</p>
+                        <button class="bg-teal-600 p-1 rounded-md -skew-x-1 w-full">Слушать</button>
+                    </div>
+                </div>
+                <div class="flex bg-teal-400 p-4 rounded-md -skew-x-6">
+                    <img src="https://tumanitochka.github.io/postlit/css/img/cover/01.jpeg" class="object-cover rounded-md -skew-x-6 h-20 w-20 relative right-9">
+                    <div>
+                        <p>Автор: Алексей Калугин</p>
+                        <p>Название: Мечта на поражение</p>
+                        <p>Исполнитель: Олег Лобанов</p>
+                        <button class="bg-teal-600 p-1 rounded-md -skew-x-1 w-full">Слушать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="grid-area: 1 / 5 / 2 / 6;" class="bg-teal-600 p-4 rounded-xl -skew-x-1">
+            <h2>Право</h2>
         </div>
     </main>
     <footer class="container mx-auto py-4 flex justify-between text-slate-50">
         <h3>Postlit.ru © 2023 - 2024</h3>
-        <p>Почта для связи: <a href="mailto:info@postlit.ru">info@postlit.ru</a></p>
+        <p class="hover:bg-teal-400 px-1 rounded-sm cursor-default -skew-x-6">Преложения и сотрудничество: <a href="mailto:info@postlit.ru">info@postlit.ru</a></p>
     </footer>
 </body>
 </html>
